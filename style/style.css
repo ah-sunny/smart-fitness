@@ -1,6 +1,26 @@
+@font-face {
+
+    /* font-family: HKGrotesk;
+    src: url('../font/hk-grotesk/HKGrotesk-SemiBold.otf'); */
+
+    font-family: 'HKGrotesk';
+    src: url('../font/hk-grotesk/HKGrotesk-MediumLegacy.otf') format('woff2'),
+        url('../font/hk-grotesk/HKGrotesk-Light.otf') format('woff');
+    font-weight: normal;
+    /* specify font weight */
+    font-style: normal;
+    /* specify font style */
+
+}
+
+
+
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'HKGrotesk', sans-serif;
+    ;
 }
 
 .hightlight_text {
@@ -61,6 +81,7 @@ Main {
     display: flex;
     gap: 10px;
     justify-content: center;
+    gap: 50px;
 }
 
 .banner_img {
@@ -88,18 +109,24 @@ Main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+   
 
 }
 
 .banner_text_div h1 {
     margin-bottom: 20px;
-    font-size: 50px;
+    font-size: 46px;
+    width: 100%;
+    /* background-color: aqua; */
 }
 
 .banner_text_div p {
-    font-weight: 400;
+    font-weight: 300;
+    font-size: 20px;
     text-align: justify;
-    font-size: clamp(1.0625rem, 1.0625rem + 0.75vw, 1.5rem);
+    line-height: 39px;
+    /* font-size: clamp(1.0725rem, 1.0625rem + 1.75vw, 1.69rem); */
+
 }
 
 .register_button {
@@ -286,11 +313,19 @@ Main {
         font-size: 10px;
     }
 
-    .banner_title , .banner_text_div h1 , .discover_section h1, .checkout_title h1 ,.bonus_section h1 {
+    .banner_title,
+    .banner_text_div h1,
+    .discover_section h1,
+    .checkout_title h1,
+    .bonus_section h1 {
         font-size: 25px;
     }
 
-    .banner_discription, .banner_text_div p , .discover_section p , .checkout_title p, .bonus_section p{
+    .banner_discription,
+    .banner_text_div p,
+    .discover_section p,
+    .checkout_title p,
+    .bonus_section p {
         font-size: 12px;
     }
 
